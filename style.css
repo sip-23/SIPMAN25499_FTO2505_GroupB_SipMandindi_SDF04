@@ -1,0 +1,44 @@
+/* Base Styles */
+
+:root {
+    font-size: 10px;
+}
+
+/* Universal Selector with box-sizing */
+*,                              /* universal selector that applies to ALL HTML elements */
+*::before,                      /* targets all pseudo-elements (created with ::before and ::after) */
+*::after {
+    box-sizing: border-box;     /* Changes how element dimensions are calculated */
+}
+
+/* Styling the footer Container and Working on Padding and Margins */
+.container {
+    background-color: #659f8f;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+
+.px-6 {
+    padding-left: 5rem; 
+    padding-right: 5rem; 
+}
+
+.py-12 {
+    padding-top: 3rem; 
+    padding-bottom: 3rem; 
+}
+
+/* Enabling flexbox layout and CSS Grid on the flex and grid Containers */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto, auto;
+    gap: 2rem;
+}
+
+/* .flex { 
+    display: flex; 
+} */
