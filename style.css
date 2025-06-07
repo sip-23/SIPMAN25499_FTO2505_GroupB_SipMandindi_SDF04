@@ -8,7 +8,15 @@
 *,                              /* universal selector that applies to ALL HTML elements */
 *::before,                      /* targets all pseudo-elements (created with ::before and ::after) */
 *::after {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;     /* Changes how element dimensions are calculated */
+}
+
+/* Styling the html element and body */
+html {
+    background-color: white;
+    margin: 0;
 }
 
 /* Styling the footer Container and Working on Padding and Margins */
@@ -39,6 +47,26 @@
     gap: 2rem;
 }
 
-/* .flex { 
-    display: flex; 
-} */
+.flex { 
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Styling the form column of the grid */
+.email-form-4-newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.submit-btn {
+    background-color: #f15a22;
+    color: white;
+
+}
