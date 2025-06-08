@@ -151,6 +151,7 @@ html {
     .footer-heading {
         flex-direction: row; /* Horizontal layout */
         width: 50% ;
+        min-width: 200px;
         flex-wrap: wrap; /* Allow items to wrap */
         flex: 1 1 40%; /* 2 items per row (accounting for gap) */
         margin-bottom: 1rem;
@@ -169,5 +170,31 @@ html {
     .tech-col {
         display: flex;
         flex-direction: column;
+    }
+}
+
+/* Mobile (375×667 and similar) */
+@media (max-width: 668px) {
+    
+    .flex {
+        flex-direction: column; /* Force vertical stack */
+        flex: 1 1 100%; /* 1 item per row */
+    }
+
+    .newsletter-col input {
+        width: 400px;
+        padding: auto;
+        margin: 1rem 0;
+        
+    }
+    
+    .newsletter-col .submit-btn {
+        width: 400px;
+        padding: auto;
+        margin-bottom: 2rem;
+    }
+
+    .logo {
+        margin-left: 1rem;
     }
 }
