@@ -143,3 +143,31 @@ html {
 }
 
 /* -------------- Complete with the Screen: Desktop --------------------  */
+
+/* -------------- Responsiveness -------------------- */
+
+/* Tablet (768×1024) */
+@media (max-width: 1000px) {
+    .footer-heading {
+        flex-direction: row; /* Horizontal layout */
+        width: 50% ;
+        flex-wrap: wrap; /* Allow items to wrap */
+        flex: 1 1 40%; /* 2 items per row (accounting for gap) */
+        margin-bottom: 1rem;
+    }
+
+    .newsletter-col {
+        margin-bottom: 2rem;
+    }
+
+    .quick-links-col {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .tech-col {
+        display: flex;
+        flex-direction: column;
+    }
+}
