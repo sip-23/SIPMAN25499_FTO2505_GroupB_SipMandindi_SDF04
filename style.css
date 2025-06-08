@@ -1,7 +1,7 @@
 /* Base Styles */
 
 :root {
-    font-size: 10px;
+    font-size: 16px;
 }
 
 /* Universal Selector with box-sizing */
@@ -13,19 +13,15 @@
     box-sizing: border-box;     /* Changes how element dimensions are calculated */
 }
 
-/* Styling the html element and body */
+/* Styling the html element */
 html {
-    background-color: white;
-    margin: 0;
+    box-sizing: border-box;  /* Sets the box-sizing property to border-box for the root <html> element. */
 }
 
 /* Styling the footer Container and Working on Padding and Margins */
 .container {
     background-color: #659f8f;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    margin: 0 auto;
-    font-size: 1.6rem;
+    padding-bottom: 4rem;
 }
 
 .px-6 {
@@ -39,17 +35,16 @@ html {
 }
 
 /* Enabling flexbox layout and CSS Grid on the flex and grid Containers */
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto, auto;
-    gap: 2rem;
-}
-
 .flex { 
-    grid-column: 1 / -1;
-    grid-row: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;                 /* Also to help with the bottom border */
+    height: auto;
+    background-color: #659f8f;
+    margin: 0 auto;
+    padding: 4rem 0;
+    border-bottom: 3px solid #f15a22 ;
 }
 
 .container > div > img {
