@@ -23,6 +23,7 @@ html {
 .container {
     background-color: #659f8f;
     padding-bottom: 4rem;
+    border-radius: 15px;      /* adding round edges as per the reference images */
 }
 
 .px-6 {
@@ -93,3 +94,25 @@ html {
 
 
 /* Working on the Quick-links item */
+.quick-links-col {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+}
+
+.quick-links-col h4 {
+    margin-bottom: 2rem;
+}
+
+.quick-links-col a {
+    color: #333;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+/* Adding some animation */
+.quick-links-col a:hover {
+    color: #f15a22;
+    transition: 0.3s ease-in-out;
+}
