@@ -2,6 +2,7 @@
 
 :root {
     font-size: 16px;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Universal Selector with box-sizing */
@@ -57,15 +58,38 @@ html {
     margin-bottom: 1rem;
 }
 
-/* Styling the form column of the grid */
-.email-form-4-newsletter {
-    display: flex;
-    flex-wrap: wrap;
-    gap:1rem;
+/* Styling the form column */
+.newsletter-col {
+    margin-right: 4rem;
+    margin-bottom: 1rem;
 }
 
-.submit-btn {
-    background-color: #f15a22;
+/* Header for the form column needs a bottom padding */
+.newsletter-col h3 {
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-col input {
+    width: 250px;
+    height: 40px;
+    border: none;           /* No visible border added */
+    border-radius: 8px;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.newsletter-col .submit-btn {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
     color: white;
-
+    background-color: #f15a22;
+    margin-left: 0.5rem;     /* elements were too close to each other, adding some space */
+    padding: 0 0.5rem;
 }
+/* Newsletter form complete and looks satisfactory */
+
+
+/* Working on the Quick-links item */
