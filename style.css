@@ -47,10 +47,14 @@ html {
     border-bottom: 3px solid #f15a22 ;
 }
 
-.container > div > img {
-    width: 100%;
+/* Setting the dimensions of the logo */
+.logo {
+    width: 300px;
     height: 100%;
     object-fit: cover;
+    padding: 4rem 0; 
+    margin-left: 4rem;
+    margin-bottom: 1rem;
 }
 
 /* Styling the form column of the grid */
