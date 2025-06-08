@@ -19,6 +19,8 @@ html {
     box-sizing: border-box;  /* Sets the box-sizing property to border-box for the root <html> element. */
 }
 
+/* -------------------------- Desktop ------------------------------ */
+
 /* Styling the footer Container and Working on Padding and Margins */
 .container {
     background-color: #659f8f;
@@ -116,3 +118,28 @@ html {
     color: #f15a22;
     transition: 0.3s ease-in-out;
 }
+
+
+/* Technologies item */
+.tech-col {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.tech-col h4 {
+    margin-bottom: 2rem;
+}
+
+.tech-col a {
+    color: #333;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.tech-col a:hover {
+    color: #f15a22;
+    transition: 0.5s ease-in-out;
+}
+
+/* -------------- Complete with the Screen: Desktop --------------------  */
